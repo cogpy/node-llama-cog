@@ -92,6 +92,9 @@ import {
 import {jsonDumps} from "./chatWrappers/utils/jsonDumps.js";
 import {experimentalChunkDocument} from "./evaluator/utils/chunkDocument.js";
 
+// OpenCog distributed agentic atomspace
+import * as OpenCog from "./opencog/index.js";
+
 import {
     type ChatHistoryItem, type ChatModelFunctionCall, type ChatModelSegmentType, type ChatModelSegment, type ChatModelFunctions,
     type ChatModelResponse, type ChatSessionModelFunction, type ChatSessionModelFunctions, type ChatSystemMessage, type ChatUserMessage,
@@ -327,5 +330,8 @@ export {
     type CombinedModelDownloaderOptions,
     jsonDumps,
     type OverridesObject,
-    experimentalChunkDocument
+    experimentalChunkDocument,
+
+    // OpenCog distributed agentic atomspace
+    OpenCog
 };
